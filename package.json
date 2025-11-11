@@ -1,0 +1,32 @@
+{
+  "name": "react-native-adscope",
+  "version": "0.1.0",
+  "description": "倍孜SDK",
+  "main": "src/index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "beizi",
+    "倍孜",
+    "广告",
+    "ad"
+  ],
+  "repository": "https://github.com/bashen1/react-native-adscope.git",
+  "author": "bashen1 <maochunjie@gmail.com> (https://github.com/bashen1)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bashen1/react-native-adscope.git/issues"
+  },
+  "homepage": "https://github.com/bashen1/react-native-adscope.git#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}

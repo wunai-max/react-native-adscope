@@ -28,6 +28,11 @@ def getExtOrIntegerDefault(name) {
 android {
   compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
   buildToolsVersion getExtOrDefault('buildToolsVersion')
+  repositories {
+    flatDir {
+      dirs 'libs'
+    }
+  }
   defaultConfig {
     minSdkVersion 16
     targetSdkVersion getExtOrIntegerDefault('targetSdkVersion')
@@ -52,7 +57,6 @@ android {
 repositories {
   mavenCentral()
   google()
-
   def found = false
   def defaultDir = null
   def androidSourcesName = 'React Native sources'
@@ -125,6 +129,5 @@ dependencies {
   // noinspection GradleDynamicVersion
   api 'com.facebook.react:react-native:+'
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  // 倍孜广告渠道sdk特有aar包，必需引入的*.*.*.*为通配符写法，引入时按照实际提供的sdk版本号更改即可
-  implementation(name: 'beizi_fusion_sdk_*.*.*.*', ext: 'aar')
+  implementation(name: 'beizi_fusion_sdk_5.2.2.4', ext: 'aar')
 }
